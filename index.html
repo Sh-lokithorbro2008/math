@@ -1,36 +1,62 @@
-<!DOCTYPE html>
 <html>
-<head>
-	<title>Guess The Word</title>
+  <head>
+    <title>A DUMBO CONCIOUSNESS WITH A HALF BRAIN TELLING YOU WHATS WHAT</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" href="style.css">
+  
+  </head>
 
-<link rel="stylesheet" type="text/css" href="game.css">
+  <body>
+  <div class="container">
+    
+    <center>
+      <h3 class="btn btn-default heading">HOW YO LAPTOP SMARTER THAN YOU AND HOW IT ACTUALLY RECOGNISE STUFF!</h3>
+      <br><br>
 
-<script src="game_login.js"></script>
-</head>
-<body>
+      <p style="font-size: 22px;">THIS AINT NO BABY AND CAN SEE AND RECOGNISE THE FOLLOWING OBJECTS: </p>
+      <b class="stuff">
+        BOOK
+        <hr>
+        MOMMY
+        <hr>
+        CUSHION
+        <hr>
+        PILLOW
+        <hr>
+        ME
+        <hr>
+        MOUSE
+        <hr>
+        PEN
+        <hr>
+      </b>
 
-	<center>
-		<h1>GAME</h1>
-		<div class="col-lg-4 col-sm-8 col-xs-11 login_div1">
-			<h3>PLAYER-1 LOGIN</h3>
-			<label>USERNAME:</label>
-			<input type="text" id="p1_input" class="form-control" placeholder="player-1 name">
-		</div>
-		<br>
-		<div class="col-lg-4 col-sm-8 col-xs-11 login_div1">
-			<h3>PLAYER-2 LOGIN</h3>
-			<label>USERNAME:</label>
-			<input type="text" id="p2_input" class="form-control" placeholder="Player-2 name">
-		</div>
-		<br>
-		<br>
-		<br>
-		<button id="start" onclick="next()">LOGIN</button>
-	</center>
-</body>
+      <label>THIS BOX HAVE EYES YO!AND THIS IS HOW YO FACE LOOKS LIKE! - </label>
+      <div id="camera"></div>
+      <br><br>
+      <div id="result"></div>
+      <br><br>
+      <button onclick="save_this_fools_face_without_makeup()" class="btn btn-info">save this fools face without makeup</button>
+      <br><br>
+      <button onclick="lets_see_if_we_can_recognise_this_fools_face_without_makeup()" class="btn btn-success">lets see if we can recognise this fools face without makeup</button>
+      <br><br>
+
+      <p style="font-size: 22px;">THAT THANG YOU JUST SHOWED:<span id="real_deal_for_the_thang_you_showed"></span></p>
+      <p style="font-size: 22px;">HOW CORRECT IT IS AND HOW WRONG YOU ARE:<span id="real_deal_for_the_thang_you_showed_recognition"></span></p>
+    </center>
+
+  </div>
+<script src="main.js"></script>
+
+  </body>
 </html>
+
+ 
+
+ 
